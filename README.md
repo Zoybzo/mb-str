@@ -19,6 +19,7 @@
 The code is tested on an NVIDIA 1080Ti Platform.
 
 ## Quick Start
+复现时使用的python版本为 3.6
 0. install pytorch and other dependencies
 ```bash
 pip install -r requirements.txt
