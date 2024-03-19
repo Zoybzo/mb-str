@@ -35,7 +35,7 @@ class RecModel(pl.LightningModule):
     def training_step(self, batch, batch_idx):
         input_ids = batch["input_ids"]
         b_seq = batch["behaviors"]
-        outputs = self(input_ids, b_seq)
+        outputs = self(input_ids, b_seq)  # forward
         outputs = outputs.view(-1, outputs.size(-1))  # BT x H
         labels = batch["labels"]
         labels = labels.view(-1)  # BT
